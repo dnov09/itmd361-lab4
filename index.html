@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 4</title>
+    <title>ITMD 361 - Lab 4</title>
 </head>
 <body>
     <form method="post" autocomplete=on action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php"></form>
@@ -14,8 +14,22 @@
 
         <!-- First name -->
         <div>
-            <label for="first_name"></label>
-            <input type="text" name="first_name_field" id="first_name">
+            <label for="first_name">First Name: </label>
+            <input type="text" name="first_name_field" id="first_name" placeholder="David">
+        </div>
+
+        <!-- last name -->
+        <div>
+            <label for="last_name">Last Name: </label>
+            <input type="text" name="last_name_field" id="last_name" placeholder="Ngige">
+        </div>
+
+        <!-- phone number -->
+        <div>
+            <label for="phone_field">Phone Number: </label>
+            <input type="tel" name="phone_number_field" id="phone_field" placeholder="123-456-7890"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
         </div>
     </fieldset>
     
