@@ -8,78 +8,81 @@
 </head>
 
 <body>
-    <form method="post" autocomplete=on action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php"></form>
+    <form method="post" autocomplete=on action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
 
-    <h1>Volunteer Form</h1>
-    <fieldset>
-        <strong>My Info</strong>
+        <h1>Volunteer Form</h1>
+        <fieldset>
+            <strong>My Info</strong>
 
-        <!-- First name -->
-        <div>
-            <label for="first_name">First Name: </label>
-            <input type="text" name="first_name_field" id="first_name" placeholder="David">
-        </div>
-        <br>
+            <!-- First name -->
+            <div>
+                <label for="first_name">First Name: </label>
+                <input type="text" name="first_name_field" id="first_name" placeholder="David">
+            </div>
+            <br>
 
-        <!-- last name -->
-        <div>
-            <label for="last_name">Last Name: </label>
-            <input type="text" name="last_name_field" id="last_name" placeholder="Ngige">
-        </div>
-        <br>
+            <!-- last name -->
+            <div>
+                <label for="last_name">Last Name: </label>
+                <input type="text" name="last_name_field" id="last_name" placeholder="Ngige">
+            </div>
+            <br>
 
-        <!-- phone number -->
-        <div>
-            <label for="phone_field">Phone Number: </label>
-            <input type="tel" name="phone_field" id="phone_field" placeholder="123-456-7890"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-        </div>
-        <br>
+            <!-- phone number -->
+            <div>
+                <label for="phone_field">Phone Number: </label>
+                <input type="tel" name="phone_field" id="phone_field" placeholder="123-456-7890"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <br>
 
-        <!-- email -->
-        <div>
-            <label for="email_field">Email Address: </label>
-            <input type="email" name="email_field" id="email_field" placeholder="test@test.com">
-        </div>
-        <br>
+            <!-- email -->
+            <div>
+                <label for="email_field">Email Address: </label>
+                <input type="email" name="email_field" id="email_field" placeholder="test@test.com">
+            </div>
+            <br>
 
-        <!-- Gender -->
-        <div>
-            <label for="gender">Gender: </label>
-            <input type="radio" id="gender" name="gender_field" value="Male">Male
-            <input type="radio" name="gender_field" value="Female">Female<br>
-        </div>
-        <br>
+            <!-- Gender -->
+            <div>
+                <label for="gender">Gender: </label>
+                <input type="radio" id="gender" name="gender_field" value="Male">Male
+                <input type="radio" name="gender_field" value="Female">Female<br>
+            </div>
+            <br>
 
-        <!-- Age -->
-        <div>
-            <label for="age_field">Age: </label>
-            <select name="age_field">
-                <option value="Under 18">Under 18</option>
-                <option value="18-24">18 - 24</option>
-                <option value="25-34">25 - 34</option>
-                <option value="35-44">35 - 44</option>
-                <option value="45-54">45 - 54</option>
-                <option value="55-64">55 - 64</option>
-                <option value="65 and over">65 and over</option>
-            </select>
-        </div>
-    </fieldset>
+            <!-- Age -->
+            <div>
+                <label for="age_field">Age: </label>
+                <select name="age_field">
+                    <option value="Under 18">Under 18</option>
+                    <option value="18-24">18 - 24</option>
+                    <option value="25-34">25 - 34</option>
+                    <option value="35-44">35 - 44</option>
+                    <option value="45-54">45 - 54</option>
+                    <option value="55-64">55 - 64</option>
+                    <option value="65 and over">65 and over</option>
+                </select>
+            </div>
+        </fieldset>
 
-    <h5>My Availability</h5>
-    <fieldset>
-        <p>Days Available:</p>
-        <input type="checkbox" name="available_field[]" id="Sunday">Sunday <br>
-        <input type="checkbox" name="available_field[]" id="Monday">Monday <br>
-        <input type="checkbox" name="available_field[]" id="Tuesday">Tuesday <br>
-        <input type="checkbox" name="available_field[]" id="Wednesday">Wednesday <br>
-        <input type="checkbox" name="available_field[]" id="Thursday">Thursday <br>
-        <input type="checkbox" name="available_field[]" id="Friday">Friday <br>
-        <input type="checkbox" name="available_field[]" id="Saturday">Saturday <br>
-        <label>Any Comments?</label>
-        <textarea name="comments_field" id="comments" cols="30" rows="10"></textarea>
-    </fieldset>
-
+        <h5>My Availability</h5>
+        <fieldset>
+            <p>Days Available:</p><br>
+            <input type="checkbox" name="available_field[]" id="Sunday">Sunday <br>
+            <input type="checkbox" name="available_field[]" id="Monday">Monday <br>
+            <input type="checkbox" name="available_field[]" id="Tuesday">Tuesday <br>
+            <input type="checkbox" name="available_field[]" id="Wednesday">Wednesday <br>
+            <input type="checkbox" name="available_field[]" id="Thursday">Thursday <br>
+            <input type="checkbox" name="available_field[]" id="Friday">Friday <br>
+            <input type="checkbox" name="available_field[]" id="Saturday">Saturday <br>
+            <br>
+            <label>Any Comments?</label><br>
+            <textarea name="comments_field" id="comments" cols="45" rows="10"></textarea>
+            <input type="hidden" name="hidden_field" value="dngige">
+        </fieldset>
+        <button type="submit">Send Me</button>
+    </form>
 </body>
 
 </html>
